@@ -1,0 +1,175 @@
+\documentclass[12pt]{article}
+\usepackage{fontspec}
+\usepackage{graphicx}
+\usepackage{scrextend}
+\usepackage{listings}
+\usepackage{tikz}
+\usepackage{amssymb}
+\usepackage{color}
+\usepackage{soul}
+\usepackage{fancyhdr}
+\usepackage{pgfornament}
+\usepackage[many]{tcolorbox}
+\usepackage{collectbox}
+\usepackage{mdframed}
+\usepackage{xcolor}
+\usepackage{mathtools}
+\usepackage[hidelinks]{hyperref}
+\usepackage[final]{pdfpages}
+\usepackage[left=0.5in,right=0.5in,top=1in,bottom=1in,footskip=15mm]{geometry}
+
+\newfontfamily{\philosopher}{Philosopher-Regular}[Extension = .ttf]
+\newfontfamily{\philosopherbold}{Philosopher-Bold}[Extension = .ttf]
+\newfontfamily{\roboto}{Roboto-Regular}[Extension = .ttf]
+\newfontfamily{\robotobold}{Roboto-Black}[Extension = .ttf]
+\newfontfamily{\robotoital}{Roboto-Italic}[Extension = .ttf]
+\newfontfamily{\overpass}{Overpass-Light}[Extension = .ttf]
+\newfontfamily{\overpassbold}{Overpass-Bold}[Extension = .ttf]
+
+\definecolor{eudaeGray0}{rgb}{0.02,0.02,0.02}
+\definecolor{eudaeGray1}{rgb}{0.15,0.15,0.15}
+\definecolor{eudaeGray2}{rgb}{0.3,0.3,0.3}
+\definecolor{eudaeWhite}{rgb}{0.7,0.7,0.7}
+\definecolor{eudaeGreen}{rgb}{0.9216,0.7,0.5196}
+\definecolor{eudaeGreen2}{rgb}{0.3412,0.8196,0}
+\definecolor{eudaeRed}{rgb}{0.0235,0.7216,0.3490}
+
+\definecolor{ontoGreen}{rgb}{0.321568627, 0.580392157, 0.319607843}
+
+\linespread{1.3}
+\pagecolor{ontoGreen}
+
+\renewcommand{\headrulewidth}{0pt}
+
+\fancypagestyle{eudaeStyle}{
+    \fancyhf{} % clear all header and footer fields
+    \fancyfoot[C]{{\large\textcolor{black}{\hyperlink{toc}{$\uparrow$}}}}
+    \fancyhead[C]{\hfill\textcolor{black}{Page \thepage}\hspace{4em}}
+}
+
+\begin{document}
+\sethlcolor{eudaeGray2} 
+\thispagestyle{empty}
+\pagestyle{empty}
+\begin{titlepage}
+\tikz[remember picture,overlay] \node[opacity=1] at (11.5,-11.2){\includegraphics[width = 0.07\textwidth]{logo.png}};
+    \vspace*{\fill}
+    \begin{center}
+        \begin{Huge}
+            {\philosopher \textcolor{white}{Ontology}}
+        \end{Huge}
+    \end{center}
+    \vspace*{\fill}
+\end{titlepage}
+
+\pagebreak
+\newpage
+\thispagestyle{empty}
+\pagestyle{empty}
+\vspace*{20mm}
+
+\begin{center}
+    \textcolor{black}{{\Large \roboto{\hypertarget{toc}{Table of Contents}}}}
+\end{center}
+
+\vspace{20mm}
+
+\begin{addmargin}[0em]{4em}
+\begin{enumerate}
+    \item \hyperlink{nftPack}{\textcolor{black}{\robotobold{NFT Pack}}} \textcolor{eudaeGray1}{\dotfill} \textcolor{black}{\roboto{Page \pageref{nftPack}}}
+    \item \hyperlink{octoNFT}{\textcolor{black}{\robotobold{Octopus NFT}}} \textcolor{eudaeGray1}{\dotfill} \textcolor{black}{\roboto{Page \pageref{octoNFT}}}
+    \item \hyperlink{octoConfig}{\textcolor{black}{\robotobold{Octpus Config}}} \textcolor{eudaeGray1}{\dotfill} \textcolor{black}{\roboto{Page \pageref{octoConfig}}}
+    \item \hyperlink{cokeNFT}{\textcolor{black}{\robotobold{Coca-cola NFT}}} \textcolor{eudaeGray1}{\dotfill} \textcolor{black}{\roboto{Page \pageref{cokeNFT}}}
+    \item \hyperlink{cokeConfig}{\textcolor{black}{\robotobold{Coca-cola Config}}} \textcolor{eudaeGray1}{\dotfill} \textcolor{black}{\roboto{Page \pageref{cokeConfig}}}
+\end{enumerate}
+\end{addmargin}
+
+\pagebreak
+\newpage
+\pagestyle{eudaeStyle}
+\pagenumbering{arabic}
+
+\noindent{\large\textcolor{white}{{\robotobold \hypertarget{nftPack}{NFT Pack}}}}\label{nftPack}
+
+\vspace{3mm}
+
+\begin{addmargin}[0em]{2em}
+{\roboto \textcolor{black}{All new users will receive an NFT pack that contains 5 NFTs, with varying degrees of rarity. They can purchase more in the web or mobile app. NFTs have a representation in the apps, but can also be deployed in augmented space owned by the user of the NFT. Various enhancements for an NFT can be purchased or programmed manually, and they can be turned on or off. Enhancements increase the value of an NFT.}}
+\end{addmargin}
+
+\vspace{20mm}
+
+\begin{figure}[h!]
+\centering
+  \includegraphics[width = 1\textwidth]{nft_pack.png}	
+\end{figure}
+
+\pagebreak
+
+\noindent{\large\textcolor{white}{{\robotobold \hypertarget{octoNFT}{Octopus NFT}}}}\label{octoNFT}
+
+\vspace{3mm}
+
+\begin{addmargin}[0em]{2em}
+{\roboto \textcolor{black}{Here is an example of an NFT.}}
+\end{addmargin}
+
+\vspace{20mm}
+
+\begin{figure}[h!]
+\centering
+  \includegraphics[width = 0.8\textwidth]{octopus_nft.png}	
+\end{figure}
+
+\pagebreak
+
+\noindent{\large\textcolor{white}{{\robotobold \hypertarget{octoConfig}{Octopus Config}}}}\label{octoConfig}
+
+\vspace{3mm}
+
+\begin{addmargin}[0em]{2em}
+{\roboto \textcolor{black}{Here is an example of how it is configured.}}
+\end{addmargin}
+
+\vspace{20mm}
+
+\begin{figure}[h!]
+\centering
+  \includegraphics[width = 0.9\textwidth]{octopus_config.png}	
+\end{figure}
+
+\pagebreak
+
+\noindent{\large\textcolor{white}{{\robotobold \hypertarget{cokeNFT}{Coca-cola NFT}}}}\label{cokeNFT}
+
+\vspace{3mm}
+
+\begin{addmargin}[0em]{2em}
+{\roboto \textcolor{black}{Here is an example of an NFT used as an advertisement.}}
+\end{addmargin}
+
+\vspace{20mm}
+
+\begin{figure}[h!]
+\centering
+  \includegraphics[width = 0.9\textwidth]{coke_nft.png}	
+\end{figure}
+
+\pagebreak
+
+\noindent{\large\textcolor{white}{{\robotobold \hypertarget{cokeConfig}{Coca-cola Config}}}}\label{cokeConfig}
+
+\vspace{3mm}
+
+\begin{addmargin}[0em]{2em}
+{\roboto \textcolor{black}{Here is an example of how it is configured.}}
+\end{addmargin}
+
+\vspace{20mm}
+
+\begin{figure}[h!]
+\centering
+  \includegraphics[width = 0.9\textwidth]{coke_config.png}	
+\end{figure}
+ 
+\end{document}
